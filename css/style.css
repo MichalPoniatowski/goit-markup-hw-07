@@ -22,7 +22,7 @@ a {
   margin: 0;
   padding: 0;
 }
-.wrapper {
+.page-wrapper {
   max-width: 1600px;
   margin: 25px auto;
   padding: 0 215px;
@@ -37,21 +37,43 @@ a {
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-.blue {
+.logo-web {
   color: var(--brand-blue);
 }
-.white {
+
+.logo-studio {
   color: rgb(255, 255, 255);
 }
 /* END LOGO*/
 
 /* NAVIGATION BAR */
 
-.top-background {
+.navigation-background {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 
-.header-nav {
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation--between {
+  justify-content: space-between;
+}
+
+.navigation--center {
+  justify-items: center;
+}
+
+.navigation--gap {
+  margin-left: 30px;
+}
+
+.navigation-box {
+  width: 261px;
+}
+
+.navigation__link {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.17;
@@ -60,38 +82,16 @@ a {
   text-decoration: none;
 }
 
-.site-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-.nav-main {
-  width: 261px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.gap-between {
-  margin-left: 30px;
-}
-
-.brand-grey {
+.navigation__link--color {
   color: var(--brand-grey);
 }
 
-.nav-position {
+.navigation-position {
   position: relative;
 }
 
-.nav-position:hover::after,
-.nav-position:focus::after {
+.navigation-position:hover::after,
+.navigation-position:focus::after {
   content: "";
   height: 4px;
   width: 53px;
@@ -103,8 +103,11 @@ a {
 }
 
 /* SEMI CLASSES-> ACTION*/
-.header-nav:hover,
-.header-nav:focus,
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--brand-blue);
+}
+
 .address:hover,
 .address:focus {
   color: var(--brand-blue);
