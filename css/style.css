@@ -33,7 +33,7 @@ a {
   padding: 0 215px;
 }
 
-/*LOGO*/
+/*LOGO - DONE*/
 .logo {
   font-family: Raleway;
   font-size: 1.625rem;
@@ -51,7 +51,7 @@ a {
 }
 /* END LOGO*/
 
-/* NAVIGATION BAR */
+/* NAVIGATION BAR -DONE */
 
 .navigation {
   display: flex;
@@ -133,6 +133,8 @@ a {
 .navigation--center:focus .navigation__item--contact {
   color: var(--brand-blue);
 }
+
+/* TO NIE DZIAŁA! WHY? */
 
 .navigation__item--contact:has(:focus) ~ .icon-contact {
   fill: var(--brand-blue);
