@@ -22,6 +22,11 @@ a {
   margin: 0;
   padding: 0;
 }
+
+.page-top {
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
 .page-wrapper {
   max-width: 1600px;
   margin: 25px auto;
@@ -48,32 +53,33 @@ a {
 
 /* NAVIGATION BAR */
 
-.navigation-background {
-  border-bottom: 1px solid rgb(236, 236, 236);
-}
-
 .navigation {
   display: flex;
   align-items: center;
-}
-
-.navigation--between {
   justify-content: space-between;
 }
 
 .navigation--center {
   justify-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.navigation--gap {
-  margin-left: 30px;
-}
-
-.navigation-box {
+.navigation--links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 261px;
 }
 
-.navigation__link {
+.navigation--contacts {
+  justify-items: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navigation__item {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.17;
@@ -82,10 +88,16 @@ a {
   text-decoration: none;
 }
 
-.navigation__link--color {
+.navigation__item--contact {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.17;
   color: var(--brand-grey);
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
+/* PODKREŚLENIE W NAWIGACJI STRONY */
 .navigation-position {
   position: relative;
 }
@@ -102,10 +114,28 @@ a {
   top: 45px;
 }
 
+/* PODKREŚLENIE W NAWIGACJI STRONY */
+
 /* SEMI CLASSES-> ACTION*/
-.navigation__link:hover,
-.navigation__link:focus {
+
+.navigation--center:hover .icon-contact,
+.navigation--center:focus .icon-contact,
+.icon-contact:focus,
+.icon-contact:hover {
+  fill: var(--brand-blue);
+}
+
+.navigation__item:hover,
+.navigation__item:focus,
+.navigation__item--contact:hover,
+.navigation__item--contact:focus,
+.navigation--center:hover .navigation__item--contact,
+.navigation--center:focus .navigation__item--contact {
   color: var(--brand-blue);
+}
+
+.navigation__item--contact:has(:focus) ~ .icon-contact {
+  fill: var(--brand-blue);
 }
 
 .address:hover,
@@ -583,16 +613,17 @@ a {
 
 /* SVG */
 
-.svg-color {
+/* svg-colo => icon-contact */
+.icon-contact {
   fill: var(--brand-grey);
 }
 
-.svg-color:hover {
+.icon-contact:hover {
   fill: var(--brand-blue);
   stroke: var(--brand-blue);
 }
 
-.svg-color:focus {
+.icon-contact:focus {
   fill: var(--brand-blue);
 }
 
@@ -657,9 +688,10 @@ a {
 }
 
 .order-service:hover,
-.header-nav:hover,
+.navigation__link:hover,
+.navigation__link:focus,
 .social-icons:hover,
-.svg-color:hover,
+.icon-contact:hover,
 .company-icons:hover,
 .address:hover,
 .input-text-box:hover,

@@ -21,22 +21,36 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navigation-background">
-      <section class="page-wrapper navigation">
-        <div class="site-nav">
-          <h2 class="logo"><span class="blue">Web</span>Studio</h2>
-          <div class="nav-main">
-            <a class="header-nav" href="index.html">Agencja</a>
-            <a class="header-nav nav-position" href="portfolio.html">Portfolio</a>
-            <a class="header-nav" href="portfolio.html">Kontakt</a>
+    <section class="page-top">
+      <div class="page-wrapper navigation">
+        <nav class="navigation--center">
+          <div class="logo"><span class="logo-web">Web</span>Studio</div>
+          <ul class="navigation--links">
+            <li><a class="navigation__item" href="index.html">Agencja</a></li>
+            <li>
+              <a class="navigation__item navigation-position" href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="navigation__item" href="portfolio.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="navigation--contacts">
+          <div class="navigation--center">
+            <svg width="26" height="30" class="icon-contact">
+              <use href="./images/icons.svg#icon-envelope" width="16"></use>
+            </svg>
+            <a class="navigation__item--contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+          <div class="navigation--center">
+            <svg width="20" height="30" class="icon-contact">
+              <use href="./images/icons.svg#icon-smartphone" width="16"></use>
+            </svg>
+            <a class="navigation__item--contact" href="tel:+48111111111">+48 111 111 111</a>
           </div>
         </div>
-        <div>
-          <a class="header-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="header-nav gap-between" href="tel:+48111111111">+48 111 111 111</a>
-        </div>
-      </section>
-    </nav>
+      </div>
+    </section>
     <main class="page-wrapper">
       <header class="portfolio-buttons">
         <button class="buttons" type="button">Wszystkie</button>

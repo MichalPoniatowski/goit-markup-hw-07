@@ -21,36 +21,34 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navigation-background">
-      <section class="page-wrapper navigation navigation--between">
-        <div class="navigation navigation--center">
+    <section class="page-top">
+      <div class="page-wrapper navigation">
+        <nav class="navigation--center">
           <div class="logo"><span class="logo-web">Web</span>Studio</div>
-          <div class="navigation navigation--between navigation-box">
-            <a class="navigation__link navigation-position" href="index.html">Agencja</a>
-            <a class="navigation__link" href="portfolio.html">Portfolio</a>
-            <a class="navigation__link" href="portfolio.html">Kontakt</a>
-          </div>
-        </div>
-        <div class="navigation navigation--center">
-          <div class="navigation navigation--center">
-            <svg width="26" height="30" class="svg-color">
-              <use href="./images/icons.svg#icon-envelope" width="16" class="svg-color"></use>
+          <ul class="navigation--links">
+            <li><a class="navigation__item navigation-position" href="index.html">Agencja</a></li>
+            <li><a class="navigation__item" href="portfolio.html">Portfolio</a></li>
+            <li><a class="navigation__item" href="portfolio.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="navigation--contacts">
+          <div class="navigation--center">
+            <svg width="26" height="30" class="icon-contact">
+              <use href="./images/icons.svg#icon-envelope" width="16"></use>
             </svg>
-            <a class="navigation__link navigation__link--color" href="mailto:info@devstudio.com"
+            <a class="navigation__item--contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </div>
-          <div class="navigation navigation--center navigation--gap">
-            <svg width="20" height="30">
-              <use href="./images/icons.svg#icon-smartphone" class="svg-color" width="16"></use>
+          <div class="navigation--center">
+            <svg width="20" height="30" class="icon-contact">
+              <use href="./images/icons.svg#icon-smartphone" width="16"></use>
             </svg>
-            <a class="navigation__link navigation__link--color" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
+            <a class="navigation__item--contact" href="tel:+48111111111">+48 111 111 111</a>
           </div>
         </div>
-      </section>
-    </nav>
+      </div>
+    </section>
     <main>
       <section class="background-img billboard">
         <h1>EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
