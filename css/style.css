@@ -6,6 +6,7 @@
   --brand-grey: rgb(117, 117, 117);
   --brand-lightgrey: rgb(175, 177, 184);
 }
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -86,20 +87,20 @@ a {
   justify-content: space-between;
 }
 
-.navigation--center {
+.navigation__wrapper {
   justify-items: center;
   display: flex;
   align-items: center;
 }
 
-.navigation--links {
+.navigation__links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 261px;
 }
 
-.navigation--contacts {
+.navigation__contacts {
   justify-items: center;
   display: flex;
   align-items: center;
@@ -145,8 +146,8 @@ a {
 
 /* SEMI CLASSES-> ACTION*/
 
-.navigation--center:hover .icon-contact,
-.navigation--center:focus .icon-contact,
+.navigation__wrapper:hover .icon-contact,
+.navigation__wrapper:focus .icon-contact,
 .icon-contact:focus,
 .icon-contact:hover {
   fill: var(--brand-blue);
@@ -156,8 +157,8 @@ a {
 .navigation__item:focus,
 .navigation__item--contact:hover,
 .navigation__item--contact:focus,
-.navigation--center:hover .navigation__item--contact,
-.navigation--center:focus .navigation__item--contact {
+.navigation__wrapper:hover .navigation__item--contact,
+.navigation__wrapper:focus .navigation__item--contact {
   color: var(--brand-blue);
 }
 
@@ -166,7 +167,6 @@ a {
 .navigation__item--contact:ha s(:focus) ~ .icon-contact {
   fill: var(--brand-blue);
 }
-
 .footer__address:hover,
 .footer__address:focus,
 .footer__address--contact:hover,
