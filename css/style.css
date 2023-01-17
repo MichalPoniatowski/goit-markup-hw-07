@@ -164,7 +164,7 @@ a {
 
 /* TO NIE DZIAŁA! WHY? */
 
-.navigation__item--contact:ha s(:focus) ~ .icon-contact {
+.navigation__item--contact:has(:focus) ~ .icon-contact {
   fill: var(--brand-blue);
 }
 .footer__address:hover,
@@ -622,11 +622,11 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.send-svg {
+.newsletter__button--color {
   fill: white;
 }
 
-.newsletter__button:hover .send-svg {
+.newsletter__button:hover .newsletter__button--color {
   fill: var(--brand-black);
 }
 
@@ -698,12 +698,12 @@ a {
   fill: var(--brand-blue);
 }
 
-.border:hover,
-.border:focus {
+.company__wrapper:hover,
+.company__wrapper:focus {
   border-color: var(--brand-blue);
 }
 
-.border {
+.company__wrapper {
   width: 170px;
   height: 92px;
   border-color: var(--brand-lightgrey);
